@@ -10,6 +10,17 @@ export default function App() {
     const data = await result.json();
     setAdvice(data.slip.advice);
     setCount((c) => c + 1);
+    try {
+      const result = await fetch("https://api.adviceslip.com/advice");
+      const data = await result.json();
+      setAdvice(data.slip.advice);
+      setCount((c) => c + 1);
+    } catch (error) {
+      console.error("Failed to fetch advice:", error);
+      setAdvice(
+        "Sorry, we couldn't fetch advice at this time. Please try again later."
+      );
+    }
   }
 
   useEffect(() => {
