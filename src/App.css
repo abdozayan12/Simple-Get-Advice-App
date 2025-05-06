@@ -1,5 +1,34 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  gap: 20px;
+  background-color: blue;
+}
+
+.adviceSec {
+  background-color: aliceblue;
+  width: 75%;
+}
+
+.App button {
+  width: 25%;
+  font-size: 2rem;
+  background-color: teal;
+  border-radius: 10px;
+}
+
+.App button:hover{
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.App p {
+  font-size: 1.5rem;
 }
 
 .App-logo {
