@@ -29,9 +29,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>{advice}</h1>
-      <button onClick={getAdvice}>Get advice</button>
-      <Message count={count} />
+      <div className="adviceSec">
+        <h1>{advice}</h1>
+        <button onClick={getAdvice}>Get advice</button>
+        <Message count={count} />
+      </div>
     </div>
   );
 }

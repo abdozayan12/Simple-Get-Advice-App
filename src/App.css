@@ -7,6 +7,12 @@
   height: 100vh;
   width: 100%;
   gap: 20px;
+  background-color: blue;
+}
+
+.adviceSec {
+  background-color: aliceblue;
+  width: 75%;
 }
 
 .App button {
