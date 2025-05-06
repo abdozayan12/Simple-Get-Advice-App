@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
-import './App.css'
+import "./App.css";
 
 export default function App() {
   const [advice, setAdvice] = useState("Learn from your mistakes.");
   const [count, setCount] = useState(0);
 
   async function getAdvice() {
-    const result = await fetch("https://api.adviceslip.com/advice");
-    const data = await result.json();
-    setAdvice(data.slip.advice);
-    setCount((c) => c + 1);
     try {
       const result = await fetch("https://api.adviceslip.com/advice");
       const data = await result.json();
